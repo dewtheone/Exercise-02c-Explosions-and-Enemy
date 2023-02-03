@@ -5,7 +5,7 @@ var velocity = Vector2.ZERO
 var rotation_speed = 5.0
 var speed = 5.0
 var max_speed = 400.0
-var health = 10
+var health = 1
 
 
 var Effects = null

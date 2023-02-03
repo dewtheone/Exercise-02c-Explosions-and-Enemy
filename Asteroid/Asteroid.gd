@@ -27,7 +27,7 @@ func damage(d):
 				var asteroid_small = Asteroid_small.instance()
 				var dir = randf()*2*PI
 				var i = Vector2(0,randf()*small_speed).rotated(dir)
-				Asteroid_Container.add_child(asteroid_small)
+				Asteroid_Container.call_deferred("add_child", asteroid_small)
 				asteroid_small.position = position + s.rotated(dir)
 				asteroid_small.velocity = i
 		queue_free()
